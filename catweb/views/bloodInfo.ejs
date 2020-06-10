@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<div class="container" style="margin: 4% auto;">
+	<div class="col-lg-3 col-md-3 col-sm-2"></div>
+	<div class="col-lg-6 col-md-6 col-sm-8">
+		<div class="thumbnail">
+			<img src="<%= cat.image %>">
+			<div class="caption">
+				<h5>ผู้โพส: <%= cat.owner %></h5>
+				<h5>กรุ๊ปเลือด: <%= cat.bloodGroup %></h5>
+				<h5>รายละเอียดอื่นๆ: <%= cat.description %></h5>
+			</div>
+		</div>
+		<center><a class="btn btn-primary" href="/blood" role="button">Go Back</a></center>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-2"></div>
+</div>
+
+<%- include("partials/footer") %>

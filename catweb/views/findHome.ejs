@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<header class="jumbotron">
+		<h2>รายชื่อน้อนๆที่ต้องการบ้านอยู่</h2>
+		<a class="btn btn-primary" href="/findHome/form" role="button" style="margin: 20px auto;">+ เพิ่มน้องที่ต้องการหาบ้าน</a>
+	</header>
+	
+	<div class="row" style="diaplay:flex; flex-wrap:wrap;">
+		<% allFhCat.forEach(function(FhCat){ %>
+		<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="thumbnail">
+				<div class="caption">
+					<label><h5>ผู้โพส: <%= FhCat.owner %></h5></label>
+					<a class="btn btn-info pull-right" href="/findHome/<%= FhCat._id %>" role="button">ข้อมูล</a>
+				</div>
+				<img src="<%= FhCat.image %>">
+				<div class="caption">
+					<button class="btn btn-primary btn-lg btn-block">รับเลี้ยง</button>
+				</div>
+			</div>
+		</div>
+		<% }); %>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<div class="container" style="margin:4.5% auto;">
+	<div class="row">
+		<h1 class="text-center" style="margin:35px auto;">เพิ่มแมวที่ต้องการหาบ้าน</h1>
+		<center><div style="width:40%;">
+			<form action="/findHome" method="POST">
+				<div class="form-group">
+					<input class="form-control" type="text" name="tokenId" placeholder="Token">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="image" placeholder="Image url">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" name="description" placeholder="Description" rows="8"></textarea>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary btn-lg btn-block" style="margin:40px auto;">ยืนยัน</button>
+				</div>
+			</form>
+		</div></center>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

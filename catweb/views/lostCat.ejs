@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<header class="jumbotron">
+		<h2>รายชื่อน้อนๆที่หายไป</h2>
+		<a class="btn btn-primary" href="/lostCat/form" role="button" style="margin: 20px auto;">+ เพิ่มน้องที่หายไป</a>
+	</header>
+
+	<div class="row" style="diaplay:flex; flex-wrap:wrap;">
+		<% allLostCat.forEach(function(LostCat){ %>
+		<div class="col-md-4 col-sm-6 col-xs-6">
+			<div class="thumbnail">
+				<div class="caption">
+					<label><h5>ผู้โพส: <%= LostCat.owner %></h5></label>
+				</div>
+				<img src="<%= LostCat.image %>">
+				<div class="caption">
+					<a class="btn btn-info btn-lg btn-block" href="/lostCat/<%= LostCat._id %>" role="button">รายละเอียด</a>
+				</div>
+			</div>
+		</div>
+		<% }); %>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

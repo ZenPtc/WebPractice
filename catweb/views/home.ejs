@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<header class="jumbotron text-center" style="margin: 6% auto;">
+		<h1 style="margin: 20px auto;">
+			CatWeb
+		</h1>
+		<p>
+			เป็นเว็บไซต์เพื่อน้องแมวและเหล่าคนรักแมว
+			<br>โดยจะรวมข้อมูลแมวที่ต้องการหาบ้าน หรือแมวที่ต้องการความช่วยเหลือไว้ในเว็บไซด์นี้
+		</p>
+	</header>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<center><a class="btn btn-success btn-lg" href="/findHome" role="button">หาบ้าน/รับเลี้ยง</a></center>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<center><a class="btn btn-danger btn-lg" href="/blood" role="button">รับบริจาคเลือด</a></center>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<center><a class="btn btn-primary btn-lg" href="/lostCat" role="button">ประกาศแมวหาย</a></center>
+		</div>
+	</div>
+</div>
+
+<%- include("partials/footer") %>

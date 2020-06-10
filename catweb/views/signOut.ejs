@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+
+<div class="container" style="margin:8% auto;">
+	<div class="row">
+		<h1 class="text-center" style="margin:35px auto;">Sign Out</h1>
+		<center><div style="width:40%;">
+			<form action="/signOut" method="POST">
+				<div class="form-group">
+					<input class="form-control" type="text" name="tokenId" placeholder="Token">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary btn-lg btn-block" style="margin:40px auto;">Sign Out</button>
+				</div>
+			</form>
+		</div></center>
+	</div>
+</div>
+
+<%- include("partials/footer") %>
